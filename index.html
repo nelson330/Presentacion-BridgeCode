@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BridgeCode & AulaPlay | Presentación Ejecutiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+  <!-- Deck -->
+  <div class="deck" id="deck">
+
+    <!-- ================================================================
+         SLIDE 1 — PORTADA
+         ================================================================ -->
+    <section class="slide active" data-index="1">
+      <div class="s1-layout">
+
+        <!-- LEFT -->
+        <div class="s1-left">
+          <div class="s1-label">
+            <span class="dot dot-blue"></span>
+            INNOVACIÓN PEDAGÓGICA · EDUCACIÓN TÉCNICA
+          </div>
+          <h1 class="s1-title">Bridge<span class="accent">Code</span></h1>
+          <p class="s1-product">sobre la plataforma interactiva <strong>AulaPlay</strong></p>
+          <p class="s1-tagline">
+            Estrategia de mediación pedagógica activa que transforma<br>
+            el aula técnica en un entorno gamificado, autónomo y <strong>100% offline</strong>.
+          </p>
+          <div class="s1-pills">
+            <span class="pill pill-green">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              100% Offline
+            </span>
+            <span class="pill pill-blue">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Open Source · MIT
+            </span>
+            <span class="pill pill-violet">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Gamificación Real
+            </span>
+            <span class="pill pill-amber">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Para el Aula Técnica
+            </span>
+          </div>
+          <div class="s1-stack">
+            <span class="stack-label">Stack:</span>
+            <code>Bun · Hono · SQLite · React 19 · Tailwind v4</code>
+          </div>
+        </div>
+
+        <!-- RIGHT: screenshot hero -->
+        <div class="s1-right">
+          <img src="Landing.png" alt="AulaPlay Dashboard" class="s1-screenshot lightbox-trigger" data-caption="Dashboard principal de AulaPlay">
+          <div class="img-click-hint">
+            <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            clic para ampliar
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 2 — EL PROBLEMA
+         ================================================================ -->
+    <section class="slide" data-index="2">
+      <div class="s-full">
+        <div class="s-top">
+          <div class="eyebrow"><span class="tag tag-red">DIAGNÓSTICO EN TALLER</span></div>
+          <h1 class="s-h1">Tres Barreras que Frenan el Aprendizaje Técnico</h1>
+          <p class="s-lead">El aula técnica enfrenta un reto estructural que los métodos tradicionales no resuelven</p>
+        </div>
+
+        <div class="prob-grid">
+          <div class="prob-card">
+            <div class="prob-icon pi-red">
+              <svg viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="prob-body">
+              <h2>Alta Abstracción Conceptual</h2>
+              <p>El estudiante enfrenta lógica formal, sintaxis y algoritmos sin andamiaje previo. La brecha cognitiva se activa desde la primera clase y genera bloqueo inmediato.</p>
+              <div class="prob-tag">Impacto: Abandono temprano</div>
+            </div>
+          </div>
+
+          <div class="prob-card">
+            <div class="prob-icon pi-red">
+              <svg viewBox="0 0 24 24"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <div class="prob-body">
+              <h2>Dependencia de Internet</h2>
+              <p>Talleres paralizados ante microcortes de red. La infraestructura de conectividad en centros técnicos es inestable, y una caída puede interrumpir toda la clase.</p>
+              <div class="prob-tag">Impacto: Tiempo perdido</div>
+            </div>
+          </div>
+
+          <div class="prob-card">
+            <div class="prob-icon pi-red">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="8" y1="15" x2="16" y2="15"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <div class="prob-body">
+              <h2>Pasividad y Frustración</h2>
+              <p>El método expositivo pasivo no da espacio al error productivo. El primer fallo desmotiva. Sin retroalimentación inmediata, el estudiante se desconecta y no regresa.</p>
+              <div class="prob-tag">Impacto: Desmotivación</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prob-result">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <strong>Resultado:</strong>
+          <span>Aprendizaje superficial, deserción y formación técnica sin aplicación real en el mercado laboral.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 3 — LA RESPUESTA: BRIDGECODE + AULAPLAY
+         ================================================================ -->
+    <section class="slide" data-index="3">
+      <div class="s-split">
+
+        <!-- LEFT: BridgeCode -->
+        <div class="s-col col-light">
+          <div class="eyebrow"><span class="tag tag-blue">ESTRATEGIA PEDAGÓGICA</span></div>
+          <h2 class="col-title col-title-blue">BridgeCode</h2>
+          <p class="col-subtitle">Metodología de Mediación Activa</p>
+
+          <div class="col-features">
+            <div class="cf-item">
+              <div class="cf-icon cfi-blue">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <div>
+                <strong>Andamiaje Cognitivo</strong>
+                <p>Problemas complejos se descomponen en micro-retos ejecutables. El estudiante avanza paso a paso sin el bloqueo del vacío cognitivo inicial.</p>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-icon cfi-blue">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div>
+                <strong>Metacognición Guiada</strong>
+                <p>Ante cada error, el sistema formula preguntas clave: <em>«¿Por qué ocurrió y qué lógica aplicaste?»</em> El error se convierte en aprendizaje consciente.</p>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-icon cfi-blue">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div>
+                <strong>Modo Manual Siempre Disponible</strong>
+                <p>El docente nunca queda bloqueado. Puede crear ejercicios manualmente en cualquier momento, sin depender de IA ni conectividad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-quote">
+            «Aprender haciendo, reflexionando y con apoyo progresivo en cada paso.»
+          </div>
+        </div>
+
+        <!-- RIGHT: AulaPlay -->
+        <div class="s-col col-primary">
+          <div class="eyebrow"><span class="tag tag-white">PLATAFORMA TECNOLÓGICA</span></div>
+          <h2 class="col-title text-white">AulaPlay</h2>
+          <p class="col-subtitle text-inv-muted">Entorno Gamificado Offline-First</p>
+
+          <div class="col-features">
+            <div class="cf-item">
+              <div class="cf-icon cfi-white">
+                <svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div>
+                <strong class="text-white">100% Offline en Red Local</strong>
+                <p class="text-inv-muted">Funciona en la intranet del laboratorio o en un solo equipo. Sin internet externo, sin servidores en la nube, sin costos de hosting.</p>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-icon cfi-white">
+                <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div>
+                <strong class="text-white">Mecánicas de Juego Reales</strong>
+                <p class="text-inv-muted">Ruleta interactiva, batallas 1v1, retos asíncronos con ghost replay, podio en vivo, puntuación con cap anti-abuso y confeti de celebración.</p>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-icon cfi-white">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+              </div>
+              <div>
+                <strong class="text-white">Panel Docente con IA Opcional</strong>
+                <p class="text-inv-muted">Diagnóstico grupal en vivo. Generación automática de ejercicios compatible con OpenAI, Groq, DeepSeek, Google y cualquier API OpenAI-compatible.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-badge-oss">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>Licencia MIT · Open Source</strong>
+              <span>Cero costos · Código auditable · Sin bloqueo de proveedor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 4 — SECUENCIA DIDÁCTICA: FLUJO CON SVG
+         ================================================================ -->
+    <section class="slide" data-index="4">
+      <div class="s-full">
+        <div class="s-top">
+          <div class="eyebrow"><span class="tag tag-violet">INGENIERÍA PEDAGÓGICA</span></div>
+          <h1 class="s-h1">Cómo Funciona la Sesión Formativa</h1>
+          <p class="s-lead">Andamiaje cognitivo continuo articulando los tres saberes en un ciclo de mejora permanente</p>
+        </div>
+
+        <!-- SVG Flow Diagram -->
+        <div class="flow-diagram">
+          <div class="flow-node fn-1">
+            <div class="fn-num">01</div>
+            <strong>Desafío Inicial</strong>
+            <p>El docente presenta un problema real sin solución. Conflicto cognitivo que activa la curiosidad.</p>
+            <div class="fn-tag">ACTIVACIÓN</div>
+          </div>
+
+          <div class="flow-connector">
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+              <defs>
+                <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#2563eb"/>
+                </marker>
+              </defs>
+              <path d="M5,20 C40,20 80,20 112,20" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#a1)" stroke-dasharray="6 4"/>
+              <text x="60" y="14" text-anchor="middle" font-size="9" fill="#64748b" font-family="Inter">responde</text>
+            </svg>
+          </div>
+
+          <div class="flow-node fn-2">
+            <div class="fn-num">02</div>
+            <strong>Experimentación</strong>
+            <p>El alumno ejecuta micro-retos adaptativos con pistas progresivas. Error permitido y esperado.</p>
+            <div class="fn-tag">ANDAMIAJE</div>
+          </div>
+
+          <div class="flow-connector">
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+              <defs>
+                <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#059669"/>
+                </marker>
+              </defs>
+              <path d="M5,20 C40,20 80,20 112,20" stroke="#059669" stroke-width="2.5" fill="none" marker-end="url(#a2)" stroke-dasharray="6 4"/>
+              <text x="60" y="14" text-anchor="middle" font-size="9" fill="#64748b" font-family="Inter">genera</text>
+            </svg>
+          </div>
+
+          <div class="flow-node fn-3">
+            <div class="fn-num">03</div>
+            <strong>Retroalimentación</strong>
+            <p>AulaPlay indica aciertos y errores en tiempo real. Puntaje justo con bonificación por velocidad.</p>
+            <div class="fn-tag">VALIDACIÓN</div>
+          </div>
+
+          <div class="flow-connector">
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+              <defs>
+                <marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#7c3aed"/>
+                </marker>
+              </defs>
+              <path d="M5,20 C40,20 80,20 112,20" stroke="#7c3aed" stroke-width="2.5" fill="none" marker-end="url(#a3)" stroke-dasharray="6 4"/>
+              <text x="60" y="14" text-anchor="middle" font-size="9" fill="#64748b" font-family="Inter">activa</text>
+            </svg>
+          </div>
+
+          <div class="flow-node fn-4">
+            <div class="fn-num">04</div>
+            <strong>Metacognición</strong>
+            <p>«¿Por qué ocurrió el error? ¿Qué lógica aplicaste para resolverlo?» Reflexión que consolida.</p>
+            <div class="fn-tag">CONSOLIDACIÓN</div>
+          </div>
+        </div>
+
+        <!-- 3 Saberes -->
+        <div class="saberes-row">
+          <div class="saber sb-blue">
+            <div class="sb-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div>
+              <span class="sb-label">SABER CONOCER</span>
+              <strong>Lógica y Fundamentos</strong>
+              <p>Comprensión profunda sin memorización pasiva de sintaxis</p>
+            </div>
+          </div>
+          <div class="saber-sep">+</div>
+          <div class="saber sb-green">
+            <div class="sb-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <span class="sb-label">SABER HACER</span>
+              <strong>Ejecución Práctica</strong>
+              <p>Micro-retos con retroalimentación inmediata en el taller</p>
+            </div>
+          </div>
+          <div class="saber-sep">+</div>
+          <div class="saber sb-violet">
+            <div class="sb-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <div>
+              <span class="sb-label">SABER SER</span>
+              <strong>Autonomía y Resiliencia</strong>
+              <p>Confianza, tolerancia al error y pensamiento crítico</p>
+            </div>
+          </div>
+          <div class="saber-sep">=</div>
+          <div class="saber sb-result">
+            <div class="sb-icon">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <span class="sb-label">COMPETENCIA TÉCNICA</span>
+              <strong>Aprendizaje Integral</strong>
+              <p>Formación aplicable, verificable y significativa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 5 — PLATAFORMA AULAPLAY
+         ================================================================ -->
+    <section class="slide" data-index="5">
+      <div class="s-split">
+
+        <!-- LEFT: 4 features -->
+        <div class="s-col col-light" style="padding-right: 36px;">
+          <div class="eyebrow"><span class="tag tag-blue">ARQUITECTURA TECNOLÓGICA</span></div>
+          <h2 class="col-title col-title-blue">La Plataforma AulaPlay</h2>
+          <p class="col-subtitle">Motor local, gamificado y adaptado al ritmo de cada estudiante</p>
+
+          <div class="feat4-grid">
+            <div class="feat4-card">
+              <div class="f4-icon f4-blue">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div>
+                <strong>Interfaz Adaptativa</strong>
+                <p>Acceso con PIN sin registro. Responde al ritmo del estudiante con feedback visual instantáneo.</p>
+              </div>
+            </div>
+            <div class="feat4-card">
+              <div class="f4-icon f4-green">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <div>
+                <strong>Motor Offline-First</strong>
+                <p>Bun + SQLite WAL embebido. Un solo comando: <code>./dev.sh</code>. Sin nube, sin servidor externo.</p>
+              </div>
+            </div>
+            <div class="feat4-card">
+              <div class="f4-icon f4-indigo">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <strong>Panel Docente en Vivo</strong>
+                <p>Mapa de calor de dificultades grupales. El docente ve exactamente dónde intervenir y quién necesita apoyo.</p>
+              </div>
+            </div>
+            <div class="feat4-card">
+              <div class="f4-icon f4-amber">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <div>
+                <strong>IA Multi-Proveedor</strong>
+                <p>Compatible con OpenAI, Groq, DeepSeek, Google. Claves cifradas con AES-256. Modo manual siempre disponible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: screenshot -->
+        <div class="s-col col-img">
+          <div class="img-stack">
+            <img src="trivia.png" alt="Trivia interactiva AulaPlay" class="img-stack-main lightbox-trigger" data-caption="Trivia interactiva en vivo — AulaPlay">
+            <div class="img-stack-badge">
+              <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Trivia Interactiva en Vivo
+            </div>
+            <div class="img-click-badge">
+              <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              Ver en grande
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 6 — EVIDENCIAS VISUALES EN AULA REAL
+         ================================================================ -->
+    <section class="slide" data-index="6">
+      <div class="s-full">
+        <div class="s-top">
+          <div class="eyebrow"><span class="tag tag-green">VALIDACIÓN EN TALLER</span></div>
+          <h1 class="s-h1">AulaPlay en el Aula Real</h1>
+          <p class="s-lead">Capturas reales del sistema funcionando en laboratorio con estudiantes técnicos</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gal-card gal-large lightbox-trigger" data-caption="Acceso a la sala con código PIN — sin registro, sin fricción">
+            <img src="unirse a la sala.png" alt="Acceso con PIN al aula" class="gal-img">
+            <div class="gal-overlay">
+              <div class="gal-info">
+                <span class="gal-step">PASO 1</span>
+                <strong>Acceso con PIN</strong>
+                <p>Sin cuenta, sin registro. El alumno ingresa el código y empieza de inmediato.</p>
+              </div>
+              <div class="gal-expand">
+                <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="gal-col">
+            <div class="gal-card lightbox-trigger" data-caption="Panel de evaluación y diagnóstico grupal en vivo para el docente">
+              <img src="evaluacion.png" alt="Panel de evaluación docente" class="gal-img">
+              <div class="gal-overlay">
+                <div class="gal-info">
+                  <span class="gal-step">PASO 2</span>
+                  <strong>Diagnóstico Docente</strong>
+                  <p>Resultados en vivo. El profesor ve el avance de cada estudiante al instante.</p>
+                </div>
+                <div class="gal-expand">
+                  <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gal-card lightbox-trigger" data-caption="Podio de resultados con reconocimiento motivacional al finalizar la sesión">
+              <img src="podio.png" alt="Podio de resultados finales" class="gal-img">
+              <div class="gal-overlay">
+                <div class="gal-info">
+                  <span class="gal-step">PASO 3</span>
+                  <strong>Podio y Celebración</strong>
+                  <p>Reconocimiento motivacional en vivo. La gamificación cierra el ciclo de aprendizaje.</p>
+                </div>
+                <div class="gal-expand">
+                  <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 7 — RESULTADOS MEDIBLES
+         ================================================================ -->
+    <section class="slide" data-index="7">
+      <div class="s-full">
+        <div class="s-top">
+          <div class="eyebrow"><span class="tag tag-green">IMPACTO CUANTITATIVO</span></div>
+          <h1 class="s-h1">Resultados en el Aula</h1>
+          <p class="s-lead">Evidencia de impacto medido en sesiones reales de laboratorio técnico</p>
+        </div>
+
+        <div class="metrics-full">
+          <div class="metric-card">
+            <div class="metric-top">
+              <div class="metric-num mn-blue" data-target="85" data-prefix="+" data-suffix="%">+85%</div>
+              <div class="metric-icon mi-blue">
+                <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+            </div>
+            <div class="metric-bar"><div class="mb-fill mf-blue" style="width:85%"></div></div>
+            <h3>Resolución Autónoma</h3>
+            <p>Incremento en la cantidad de estudiantes que completan retos prácticos de forma independiente durante el bloque horario, sin intervención directa del docente.</p>
+            <div class="metric-note">vs. método tradicional expositivo</div>
+          </div>
+
+          <div class="metric-sep"></div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <div class="metric-num mn-green" data-target="100" data-prefix="" data-suffix="%">100%</div>
+              <div class="metric-icon mi-green">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+            </div>
+            <div class="metric-bar"><div class="mb-fill mf-green" style="width:100%"></div></div>
+            <h3>Continuidad Operativa</h3>
+            <p>Cero interrupciones por fallas de conectividad. El sistema funciona con la red local del laboratorio. Una caída de internet no detiene la sesión formativa.</p>
+            <div class="metric-note">garantía absoluta en entorno offline</div>
+          </div>
+
+          <div class="metric-sep"></div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <div class="metric-num mn-violet" data-target="60" data-prefix="" data-suffix="%">60%</div>
+              <div class="metric-icon mi-violet">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+            </div>
+            <div class="metric-bar"><div class="mb-fill mf-violet" style="width:60%"></div></div>
+            <h3>Tiempo Docente Liberado</h3>
+            <p>Reducción de tareas mecánicas de calificación. El docente dedica ese tiempo a tutoría personalizada, andamiaje directo y retroalimentación formativa de calidad.</p>
+            <div class="metric-note">hacia tutoría formativa de alto valor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SLIDE 8 — ESCALABILIDAD MULTIDISCIPLINAR
+         ================================================================ -->
+    <section class="slide" data-index="8">
+      <div class="s-full">
+        <div class="s-top">
+          <div class="eyebrow"><span class="tag tag-violet">TRANSVERSALIDAD Y PROYECCIÓN</span></div>
+          <h1 class="s-h1">Un Motor para Toda la Formación Técnica</h1>
+          <p class="s-lead">BridgeCode es la estrategia para programación · AulaPlay escala a cualquier especialidad sin reescribir una sola línea</p>
+        </div>
+
+        <!-- Hub Radial Diagram — single SVG, lines + nodes in ONE coordinate space -->
+        <div class="hub-container">
+          <svg class="hub-svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arr-gray" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M1,1 L7,4 L1,7 Z" fill="#cbd5e1" stroke="none"/>
+              </marker>
+              <marker id="arr-indigo" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M1,1 L7,4 L1,7 Z" fill="#4f46e5" stroke="none"/>
+              </marker>
+            </defs>
+
+            <!--
+              Coordinate plan (viewBox 1200×480):
+              Center AulaPlay:     cx=600, cy=240   → foreignObject x=460 y=155 w=280 h=170
+              Top-left Elec:       cx=140, cy=66    → foreignObject x=20  y=22  w=240 h=88  → mid=(140,66)
+              Top-right Mant:      cx=1060,cy=66    → foreignObject x=940 y=22  w=240 h=88  → mid=(1060,66)
+              Mid-left Cont:       cx=120, cy=336   → foreignObject x=20  y=292 w=220 h=88  → mid=(130,336)
+              Mid-right Dis:       cx=1080,cy=336   → foreignObject x=960 y=292 w=220 h=88  → mid=(1070,336)
+              Bottom BridgeCode:   cx=600, cy=422   → foreignObject x=460 y=374 w=280 h=96  → mid=(600,422)
+
+              Lines start from center node edge (approx):
+                top = 600,155  bottom = 600,325  left = 460,240  right = 740,240
+            -->
+
+            <!-- Lines: center → top-left node center -->
+            <line x1="530" y1="190" x2="250" y2="100" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arr-gray)"/>
+            <!-- Lines: center → top-right node center -->
+            <line x1="670" y1="190" x2="950" y2="100" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arr-gray)"/>
+            <!-- Lines: center → mid-left node center -->
+            <line x1="515" y1="265" x2="230" y2="330" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arr-gray)"/>
+            <!-- Lines: center → mid-right node center -->
+            <line x1="685" y1="265" x2="968" y2="330" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arr-gray)"/>
+            <!-- Line: center bottom → BridgeCode top (active, solid) -->
+            <line x1="600" y1="325" x2="600" y2="368" stroke="#4f46e5" stroke-width="3.5" marker-end="url(#arr-indigo)"/>
+
+            <!-- "Próximamente" labels at midpoint of each inactive line -->
+            <text x="380" y="132" text-anchor="middle" font-size="13" fill="#94a3b8" font-family="Inter,sans-serif" font-style="italic">Próximamente</text>
+            <text x="815" y="132" text-anchor="middle" font-size="13" fill="#94a3b8" font-family="Inter,sans-serif" font-style="italic">Próximamente</text>
+            <text x="355" y="322" text-anchor="middle" font-size="13" fill="#94a3b8" font-family="Inter,sans-serif" font-style="italic">Próximamente</text>
+            <text x="843" y="322" text-anchor="middle" font-size="13" fill="#94a3b8" font-family="Inter,sans-serif" font-style="italic">Próximamente</text>
+
+            <!-- ══════════ CENTER: AulaPlay ══════════ -->
+            <foreignObject x="460" y="155" width="280" height="170">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-hub-center">
+                <span class="fo-emoji">🎮</span>
+                <strong>AulaPlay</strong>
+                <span class="fo-badge">Motor Core</span>
+              </div>
+            </foreignObject>
+
+            <!-- ══════════ TOP-LEFT: Electricidad ══════════ -->
+            <foreignObject x="20" y="22" width="240" height="88">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-node fo-inactive">
+                <span class="fo-node-emoji">⚡</span>
+                <div><strong>Electricidad</strong><p>Circuitos y Simbología</p></div>
+              </div>
+            </foreignObject>
+
+            <!-- ══════════ TOP-RIGHT: Mantenimiento ══════════ -->
+            <foreignObject x="940" y="22" width="240" height="88">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-node fo-inactive">
+                <span class="fo-node-emoji">⚙️</span>
+                <div><strong>Mantenimiento</strong><p>Protocolos Industriales</p></div>
+              </div>
+            </foreignObject>
+
+            <!-- ══════════ MID-LEFT: Contabilidad ══════════ -->
+            <foreignObject x="20" y="292" width="220" height="88">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-node fo-inactive">
+                <span class="fo-node-emoji">📊</span>
+                <div><strong>Contabilidad</strong><p>Procesos Financieros</p></div>
+              </div>
+            </foreignObject>
+
+            <!-- ══════════ MID-RIGHT: Diseño Técnico ══════════ -->
+            <foreignObject x="960" y="292" width="220" height="88">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-node fo-inactive">
+                <span class="fo-node-emoji">🎨</span>
+                <div><strong>Diseño Técnico</strong><p>Geometría y CAD</p></div>
+              </div>
+            </foreignObject>
+
+            <!-- ══════════ BOTTOM ACTIVE: BridgeCode ══════════ -->
+            <foreignObject x="460" y="374" width="280" height="96">
+              <div xmlns="http://www.w3.org/1999/xhtml" class="fo-node fo-active">
+                <span class="fo-node-emoji">💻</span>
+                <div><strong>BridgeCode</strong><p>Programación</p></div>
+                <span class="fo-live">● Activo</span>
+              </div>
+            </foreignObject>
+
+          </svg>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         SLIDE 9 — CIERRE + QR HERO
+         ================================================================ -->
+    <section class="slide" data-index="9">
+      <div class="closing">
+
+        <!-- LEFT text -->
+        <div class="closing-left">
+          <span class="tag tag-blue">ACCESO LIBRE · SIN COSTO</span>
+
+          <h1 class="closing-h1">
+            Código abierto.<br>
+            <span class="ch1-accent">Listo para tu aula.</span>
+          </h1>
+
+          <p class="closing-desc">
+            AulaPlay es una solución libre, autoalojada y lista para usar. Explora el código fuente, descarga, instala y adapta la plataforma a tu institución sin ningún costo de licenciamiento.
+          </p>
+
+          <div class="closing-url-box">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <code>github.com/nelson330/BridgeCode-v2</code>
+          </div>
+
+          <div class="closing-chips">
+            <span class="chip">Software Libre</span>
+            <span class="chip">Licencia MIT</span>
+            <span class="chip">Autoalojado</span>
+            <span class="chip">Sin Suscripción</span>
+            <span class="chip">Auditable</span>
+          </div>
+
+          <p class="closing-thanks">¡Muchas gracias por su atención!</p>
+        </div>
+
+        <!-- RIGHT: QR gigante y protagónico -->
+        <div class="closing-right">
+          <div class="qr-stage">
+            <div class="qr-label-top">ESCANEA PARA ACCEDER AL REPOSITORIO</div>
+            <div class="qr-frame">
+              <img src="qr-code-github.png" alt="QR Repositorio BridgeCode-v2 GitHub" class="qr-img lightbox-trigger" data-caption="Escanea para acceder al repositorio BridgeCode-v2 en GitHub">
+            </div>
+            <div class="qr-label-bottom">
+              <svg viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+              Apunta la cámara de tu teléfono
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /deck -->
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img src="" alt="" id="lbImg">
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- NAV BAR -->
+  <nav class="nav-bar">
+    <button class="nav-btn" id="prevBtn">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="nav-dots" id="navDots"></div>
+    <div class="nav-counter"><span id="curNum">01</span><span class="nc-sep">/</span><span id="totalNum">09</span></div>
+    <button class="nav-btn" id="nextBtn">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
