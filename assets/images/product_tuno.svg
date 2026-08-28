@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradTuno" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532D"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="tunoBark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="16" fill="url(#bgGradTuno)"/>
+  
+  <!-- Wooden hanging bar -->
+  <rect x="50" y="45" width="200" height="12" rx="6" fill="#78350F" stroke="#FDE68A" stroke-width="2"/>
+  
+  <!-- Tuno Bark Tapestry with frayed organic edges -->
+  <path d="M 65 57 L 235 57 L 240 240 Q 200 250 150 242 Q 100 252 60 240 Z" fill="url(#tunoBark)" stroke="#FDE68A" stroke-width="2"/>
+  
+  <!-- Texture lines of fibrous beaten bark -->
+  <line x1="75" y1="75" x2="225" y2="75" stroke="#92400E" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <line x1="70" y1="100" x2="230" y2="100" stroke="#92400E" stroke-width="1.5" stroke-dasharray="12,5"/>
+  <line x1="75" y1="130" x2="225" y2="130" stroke="#92400E" stroke-width="1.5" stroke-dasharray="10,4"/>
+  <line x1="70" y1="160" x2="230" y2="160" stroke="#92400E" stroke-width="1.5" stroke-dasharray="14,6"/>
+  <line x1="75" y1="190" x2="225" y2="190" stroke="#92400E" stroke-width="1.5" stroke-dasharray="8,5"/>
+
+  <!-- Native Mayangna Sun, River & Forest Motif -->
+  <circle cx="150" cy="115" r="22" fill="#DC2626" stroke="#FEF08A" stroke-width="2"/>
+  <path d="M 150 82 L 150 88 M 150 142 L 150 148 M 117 115 L 123 115 M 177 115 L 183 115" stroke="#FEF08A" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- River waves in natural dye -->
+  <path d="M 85 155 Q 115 140 150 155 Q 185 170 215 155" fill="none" stroke="#1E3A8A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 85 175 Q 115 160 150 175 Q 185 190 215 175" fill="none" stroke="#1E3A8A" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Forest trees symbol -->
+  <polygon points="120,225 130,205 140,225" fill="#047857"/>
+  <polygon points="150,228 160,202 170,228" fill="#047857"/>
+  <polygon points="180,225 190,205 200,225" fill="#047857"/>
+</svg>

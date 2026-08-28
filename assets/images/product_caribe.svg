@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCaribe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#083344"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="basketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#A16207"/>
+      <stop offset="100%" stop-color="#713F12"/>
+    </linearGradient>
+    <linearGradient id="jarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="16" fill="url(#bgCaribe)"/>
+
+  <!-- Woven Bamboo Basket Box -->
+  <path d="M 45 150 L 255 150 L 235 255 L 65 255 Z" fill="url(#basketGrad)" stroke="#FEF08A" stroke-width="2"/>
+  
+  <!-- Basket weave grid -->
+  <line x1="50" y1="175" x2="250" y2="175" stroke="#713F12" stroke-width="2"/>
+  <line x1="55" y1="205" x2="245" y2="205" stroke="#713F12" stroke-width="2"/>
+  <line x1="60" y1="230" x2="240" y2="230" stroke="#713F12" stroke-width="2"/>
+
+  <line x1="85" y1="150" x2="95" y2="255" stroke="#FEF08A" stroke-width="1.5" opacity="0.6"/>
+  <line x1="125" y1="150" x2="130" y2="255" stroke="#FEF08A" stroke-width="1.5" opacity="0.6"/>
+  <line x1="175" y1="150" x2="170" y2="255" stroke="#FEF08A" stroke-width="1.5" opacity="0.6"/>
+  <line x1="215" y1="150" x2="205" y2="255" stroke="#FEF08A" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Botanical Balm Amber Glass Jars inside -->
+  <!-- Jar 1 -->
+  <rect x="85" y="90" width="55" height="75" rx="8" fill="#B45309" stroke="#FEF3C7" stroke-width="2"/>
+  <rect x="95" y="76" width="35" height="15" rx="4" fill="#78350F" stroke="#FEF3C7" stroke-width="2"/>
+  <rect x="90" y="112" width="45" height="35" rx="4" fill="#FEF3C7"/>
+  <text x="112" y="133" font-size="9" font-weight="bold" fill="#78350F" text-anchor="middle">COPAL</text>
+
+  <!-- Jar 2 (Coconut Balm) -->
+  <rect x="160" y="80" width="60" height="85" rx="8" fill="#0D9488" stroke="#FEF3C7" stroke-width="2"/>
+  <rect x="172" y="65" width="36" height="16" rx="4" fill="#115E59" stroke="#FEF3C7" stroke-width="2"/>
+  <rect x="167" y="105" width="46" height="42" rx="4" fill="#FEF3C7"/>
+  <text x="190" y="128" font-size="9" font-weight="bold" fill="#115E59" text-anchor="middle">COCO</text>
+
+  <!-- Botanical Herb Sprig -->
+  <path d="M 150 140 Q 140 100 120 70" fill="none" stroke="#4ADE80" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="125" cy="80" rx="8" ry="4" transform="rotate(-30 125 80)" fill="#22C55E"/>
+  <ellipse cx="140" cy="105" rx="8" ry="4" transform="rotate(30 140 105)" fill="#22C55E"/>
+</svg>
