@@ -1,705 +1,402 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herencia Pinolera | Ecosistema Tecnológico Offline-First para Saberes Tradicionales</title>
-  <meta name="description" content="Ecosistema Tecnológico-Comunitario Offline-First para el Rescate, Formación y Trazabilidad de Saberes Tradicionales. IV Rally Nacional de Innovación Nicaragua Innova 2026.">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
-  
-  <!-- Modern Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/components.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple — Manual de Marca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Zen+Antique+Soft&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <main class="deck" id="deck">
+    <!-- ============ SLIDE 1 — PORTADA ============ -->
+    <section class="slide slide--cover" data-slide="0" data-active>
+      <span class="badge">01 / 07</span>
+      <div class="cover__content">
+        <h1 class="cover__logo">Simple</h1>
+        <p class="cover__tagline">
+          Manual de identidad &mdash; ropa casual&ndash;formal para hombre.
+        </p>
+      </div>
+      <ul class="cover__index">
+        <li><span>01</span> Portada</li>
+        <li><span>02</span> La Marca</li>
+        <li><span>03</span> Color</li>
+        <li><span>04</span> Tipografía</li>
+        <li><span>05</span> Iconografía</li>
+        <li><span>06</span> Estilo</li>
+        <li><span>07</span> Aplicación</li>
+      </ul>
+    </section>
 
-  <div id="app-shell-container">
+    <!-- ============ SLIDE 2 — LA MARCA ============ -->
+    <section class="slide" data-slide="1">
+      <header class="slide__header">
+        <span class="badge">02 / 07</span>
+        <h2 class="slide__title">La Marca</h2>
+        <p class="slide__sub">Quiénes somos y a quién le hablamos.</p>
+      </header>
 
-    <!-- Offline / Online Real-time Status Banner -->
-    <div id="offline-status-banner" class="status-banner banner-online animate-slide-down">
-      <div class="banner-content">
-        <span class="pulse-dot online"></span>
-        <strong>CONEXIÓN CLOUD / P2P ACTIVA</strong> &bull; Sincronizado en tiempo real con el Micro-Servidor Comunal (Raspberry Pi 5).
+      <div class="cards cards--three">
+        <article class="card-brutal">
+          <i class="fa-solid fa-user-tie card__icon"></i>
+          <h3 class="card__title">Público</h3>
+          <p class="card__body">
+            Hombre de <strong>18 a 35 años</strong> que busca verse bien sin
+            esfuerzo. Valora lo simple, lo funcional y lo atemporal.
+          </p>
+        </article>
+
+        <article class="card-brutal">
+          <i class="fa-solid fa-shirt card__icon"></i>
+          <h3 class="card__title">Categoría</h3>
+          <p class="card__body">
+            <strong>Casual&ndash;formal</strong>: prendas que cruzan la oficina,
+            el café y la salida nocturna sin cambiar de look.
+          </p>
+        </article>
+
+        <article class="card-brutal">
+          <i class="fa-solid fa-compass card__icon"></i>
+          <h3 class="card__title">Estilo</h3>
+          <p class="card__body">
+            <strong>Neobrutalismo moderno</strong>: estructura, carácter y
+            honestidad visual. Nada decorativo, todo intencional.
+          </p>
+        </article>
+      </div>
+
+      <p class="slide__note">
+        <i class="fa-solid fa-quote-left"></i>
+        “Menos es más. La marca se justifica en cada decisión.”
+      </p>
+    </section>
+
+    <!-- ============ SLIDE 3 — COLOR ============ -->
+    <section class="slide" data-slide="2">
+      <header class="slide__header">
+        <span class="badge">03 / 07</span>
+        <h2 class="slide__title">Color</h2>
+        <p class="slide__sub">
+          Una paleta neutra con acentos que respiran personalidad.
+        </p>
+      </header>
+
+      <div class="color-grid">
+        <article class="swatch swatch--base">
+          <div class="swatch__chip"></div>
+          <h3 class="swatch__name">Base</h3>
+          <code class="swatch__hex">#F0F1EA</code>
+          <p class="swatch__reason">
+            Fondo principal. Beige muy claro que recibe al usuario sin
+            saturar la retina — equivalente digital del papel.
+          </p>
+        </article>
+
+        <article class="swatch swatch--principal">
+          <div class="swatch__chip"></div>
+          <h3 class="swatch__name">Principal</h3>
+          <code class="swatch__hex">#969065</code>
+          <p class="swatch__reason">
+            Beige ford 25% más oscuro. Color identitario: tierra, arcilla,
+            calidez sin estridencia. Neutro y atemporal.
+          </p>
+        </article>
+
+        <article class="swatch swatch--secundario">
+          <div class="swatch__chip"></div>
+          <h3 class="swatch__name">Secundario</h3>
+          <code class="swatch__hex">#659681</code>
+          <p class="swatch__reason">
+            Verde sage, 4to tono en armonía square. Acompaña al principal
+            sin competir — naturaleza, calma, equilibrio.
+          </p>
+        </article>
+
+        <article class="swatch swatch--acento">
+          <div class="swatch__chip"></div>
+          <h3 class="swatch__name">Acento</h3>
+          <code class="swatch__hex">#D0A1FF</code>
+          <p class="swatch__reason">
+            Lila, complementario dividido a 5to tono. Reservado para CTAs y
+            llamados — sorprende sin gritar.
+          </p>
+        </article>
+
+        <article class="swatch swatch--texto">
+          <div class="swatch__chip"></div>
+          <h3 class="swatch__name">Texto</h3>
+          <code class="swatch__hex">#363441</code>
+          <p class="swatch__reason">
+            Azul noche profundo, complementario del base. Lectura cómoda,
+            sin la dureza del negro puro.
+          </p>
+        </article>
+      </div>
+
+      <div class="gradient-band" aria-label="Degradado base a principal">
+        <span class="gradient-band__label">Degradado base &rarr; principal</span>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 4 — TIPOGRAFÍA ============ -->
+    <section class="slide" data-slide="3">
+      <header class="slide__header">
+        <span class="badge">04 / 07</span>
+        <h2 class="slide__title">Tipografía</h2>
+        <p class="slide__sub">
+          Una sans grotesca y una serif suave: tensión moderna / clásica.
+        </p>
+      </header>
+
+      <div class="type-grid">
+        <article class="type-card">
+          <span class="type-card__label">Títulos</span>
+          <p class="type-card__sample type-card__sample--title">Aa</p>
+          <h3 class="type-card__family">Oswald</h3>
+          <p class="type-card__meta">
+            <strong>Bold (700)</strong><br />
+            Sans grotesca condensada. Verticalidad, fuerza, modernidad.
+            Ideal para titulares de catálogo y nombres de producto.
+          </p>
+        </article>
+
+        <article class="type-card">
+          <span class="type-card__label">Subtítulos</span>
+          <p class="type-card__sample type-card__sample--sub">Aa</p>
+          <h3 class="type-card__family">Oswald</h3>
+          <p class="type-card__meta">
+            <strong>Regular (400)</strong><br />
+            Misma familia, menor peso. Crea jerarquía sin cambiar de voz.
+            Mantiene coherencia visual con los títulos.
+          </p>
+        </article>
+
+        <article class="type-card type-card--body">
+          <span class="type-card__label">Cuerpo</span>
+          <p class="type-card__sample type-card__sample--body">
+            Zen Antique Soft define el ritmo de lectura: serif suave,
+            clásica sin pesadas, humana sin informal.
+          </p>
+          <h3 class="type-card__family">Zen Antique Soft</h3>
+          <p class="type-card__meta">
+            <strong>Regular (400)</strong><br />
+            Serif de trazo orgánico. Lectura larga cómoda en descripciones
+            de producto, blog y comunicación de marca.
+          </p>
+        </article>
+      </div>
+
+      <p class="slide__note">
+        <i class="fa-solid fa-quote-left"></i>
+        La combinación sans + serif refleja el posicionamiento casual&ndash;formal
+        de la marca: estructura moderna con alma clásica.
+      </p>
+    </section>
+
+    <!-- ============ SLIDE 5 — ICONOGRAFÍA ============ -->
+    <section class="slide" data-slide="4">
+      <header class="slide__header">
+        <span class="badge">05 / 07</span>
+        <h2 class="slide__title">Iconografía</h2>
+        <p class="slide__sub">
+          Font Awesome Free: un solo set, un solo lenguaje visual.
+        </p>
+      </header>
+
+      <div class="icon-grid">
+        <article class="icon-card">
+          <i class="fa-solid fa-bag-shopping icon-card__icon"></i>
+          <code class="icon-card__name">bag-shopping</code>
+          <span class="icon-card__cat">Tienda</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-shirt icon-card__icon"></i>
+          <code class="icon-card__name">shirt</code>
+          <span class="icon-card__cat">Producto</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-shoe-prints icon-card__icon"></i>
+          <code class="icon-card__name">shoe-prints</code>
+          <span class="icon-card__cat">Producto</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-magnifying-glass icon-card__icon"></i>
+          <code class="icon-card__name">magnifying-glass</code>
+          <span class="icon-card__cat">UI</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-user icon-card__icon"></i>
+          <code class="icon-card__name">user</code>
+          <span class="icon-card__cat">Cuenta</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-cart-shopping icon-card__icon"></i>
+          <code class="icon-card__name">cart-shopping</code>
+          <span class="icon-card__cat">Compra</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-heart icon-card__icon"></i>
+          <code class="icon-card__name">heart</code>
+          <span class="icon-card__cat">Favoritos</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-tag icon-card__icon"></i>
+          <code class="icon-card__name">tag</code>
+          <span class="icon-card__cat">Precio</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-bars icon-card__icon"></i>
+          <code class="icon-card__name">bars</code>
+          <span class="icon-card__cat">UI</span>
+        </article>
+        <article class="icon-card">
+          <i class="fa-solid fa-arrow-right icon-card__icon"></i>
+          <code class="icon-card__name">arrow-right</code>
+          <span class="icon-card__cat">UI</span>
+        </article>
+      </div>
+
+      <p class="slide__note">
+        <i class="fa-solid fa-circle-info"></i>
+        Set gratuito, escalable, peso sólido coherente con el estilo
+        neobrutalista. Una sola fuente iconográfica = coherencia visual.
+      </p>
+    </section>
+
+    <!-- ============ SLIDE 6 — ESTILO ============ -->
+    <section class="slide" data-slide="5">
+      <header class="slide__header">
+        <span class="badge">06 / 07</span>
+        <h2 class="slide__title">Estilo · Neobrutalismo Moderno</h2>
+        <p class="slide__sub">
+          Bordes duros, sombras planas, esquinas rectas. Honestidad visual.
+        </p>
+      </header>
+
+      <div class="style-grid">
+        <article class="rule-card">
+          <code class="rule-card__code">border: 3px solid #363441</code>
+          <h3 class="rule-card__title">Borde marcado</h3>
+          <p class="rule-card__body">
+            Línea gruesa y oscura que delimita cada bloque. Da peso y
+            presencia, como un trazo de rotulador.
+          </p>
+        </article>
+
+        <article class="rule-card">
+          <code class="rule-card__code">box-shadow: 8px 8px 0 #363441</code>
+          <h3 class="rule-card__title">Sombra dura</h3>
+          <p class="rule-card__body">
+            Cero difuminado. La sombra es plana, desplazada, gráfica.
+            Aporta profundidad sin realismo.
+          </p>
+        </article>
+
+        <article class="rule-card">
+          <code class="rule-card__code">border-radius: 0</code>
+          <h3 class="rule-card__title">Esquinas rectas</h3>
+          <p class="rule-card__body">
+            Sin redondeos. Cada elemento es un bloque declarado, no una
+            forma suavizada. Solo las fotos respiran.
+          </p>
+        </article>
+
+        <article class="rule-card">
+          <code class="rule-card__code">contrast: 100%</code>
+          <h3 class="rule-card__title">Alto contraste</h3>
+          <p class="rule-card__body">
+            El base claro y el texto oscuro nunca negocian. La jerarquía
+            se lee al instante.
+          </p>
+        </article>
+      </div>
+
+      <p class="slide__note">
+        <i class="fa-solid fa-quote-left"></i>
+        El neobrutalismo encaja con Simple porque comparte valores:
+        <strong>textura, artesanía, carácter</strong>. Nada genérico.
+      </p>
+    </section>
+
+    <!-- ============ SLIDE 7 — APLICACIÓN ============ -->
+    <section class="slide" data-slide="6">
+      <header class="slide__header">
+        <span class="badge">07 / 07</span>
+        <h2 class="slide__title">Aplicación</h2>
+        <p class="slide__sub">
+          Cómo se ven las decisiones juntas: paleta, tipo y estilo en uso.
+        </p>
+      </header>
+
+      <div class="photo-collage">
+        <figure class="photo photo--1">
+          <img src="pohto%20assets/imagen%201.jpg" alt="Lookbook 1" />
+          <figcaption class="photo__caption">
+            <span class="photo__num">01</span>
+            <span class="photo__title">Chaqueta denim</span>
+          </figcaption>
+        </figure>
+        <figure class="photo photo--2">
+          <img src="pohto%20assets/imagen%202.jpg" alt="Lookbook 2" />
+          <figcaption class="photo__caption">
+            <span class="photo__num">02</span>
+            <span class="photo__title">Casual urbano</span>
+          </figcaption>
+        </figure>
+        <figure class="photo photo--3">
+          <img src="pohto%20assets/imagen%203.jpg" alt="Lookbook 3" />
+          <figcaption class="photo__caption">
+            <span class="photo__num">03</span>
+            <span class="photo__title">Cazadora sherpa</span>
+          </figcaption>
+        </figure>
+        <figure class="photo photo--4">
+          <img src="pohto%20assets/imagen%204.jpg" alt="Lookbook 4" />
+          <figcaption class="photo__caption">
+            <span class="photo__num">04</span>
+            <span class="photo__title">Denim oscuro</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <footer class="closing">
+        <h3 class="closing__line">Simple &mdash; menos es más.</h3>
+        <p class="closing__sub">
+          Cada decisión gráfica se justifica en su función. Sin adornos.
+        </p>
+        <button class="btn-brutal" id="restart">
+          <i class="fa-solid fa-rotate-left"></i> Volver al inicio
+        </button>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Navegación del deck -->
+  <nav class="deck-nav" aria-label="Navegación del deck">
+    <button class="deck-nav__btn" id="prev" aria-label="Slide anterior">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="deck-nav__progress">
+      <div class="deck-nav__dots" id="dots"></div>
+      <div class="deck-nav__bar">
+        <div class="deck-nav__bar-fill" id="bar"></div>
       </div>
     </div>
+    <button class="deck-nav__btn" id="next" aria-label="Siguiente slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </nav>
 
-    <!-- Header & Navigation -->
-    <header class="hp-header">
-      <div class="header-top-bar">
-        
-        <!-- Brand Identity -->
-        <div class="brand-logo-wrapper" onclick="window.hpApp.navigate('hub')">
-          <img src="assets/images/logo.svg" alt="Herencia Pinolera Logo" class="brand-logo-svg">
-          <div class="brand-title-group">
-            <h1>Herencia Pinolera</h1>
-            <p>IV Rally Nacional Nicaragua Innova 2026</p>
-          </div>
-        </div>
-
-        <!-- Utility Controls (Languages, Offline switch, Audio guide, Viewport simulator) -->
-        <div class="header-actions-group">
-          
-          <!-- 4-Language Selector Pills -->
-          <div class="lang-selector-pills" title="Seleccionar Lengua Originaria">
-            <button class="lang-pill active" data-lang-code="es" title="Español">🇳🇮 ES</button>
-            <button class="lang-pill" data-lang-code="mi" title="Miskitu">🛶 MI</button>
-            <button class="lang-pill" data-lang-code="my" title="Mayangna">🌿 MY</button>
-            <button class="lang-pill" data-lang-code="kr" title="Kriol">🌴 KR</button>
-          </div>
-
-          <!-- Offline Simulation Switch -->
-          <label class="btn-control-icon" title="Simular desconexión a internet">
-            <input type="checkbox" id="toggle-offline-mode" style="cursor: pointer;">
-            <span id="nav-offline-indicator" class="nav-badge badge-online">
-              <span class="indicator-icon">🌐</span> <span class="indicator-text">En Línea</span>
-            </span>
-          </label>
-
-          <!-- P2P Sync Button -->
-          <button id="btn-sync-offline" class="btn-control-icon" title="Sincronizar datos con Micro-Servidor Raspberry Pi 5">
-            <span>🔄</span> <span>Sincronizar</span>
-          </button>
-
-          <!-- Voice Narrator Audio Guide -->
-          <button id="btn-toggle-voice-guide" class="btn-control-icon active" title="Audio-guía por voz para inclusión territorial">
-            <span>🔊</span> <span>Audio: On</span>
-          </button>
-
-          <!-- Mobile View Simulator -->
-          <button id="btn-toggle-mobile-frame" class="btn-control-icon" title="Alternar vista Móvil PWA / Pantalla Completa">
-            <span>📱</span> <span>Simular PWA</span>
-          </button>
-
-        </div>
-
-      </div>
-
-      <!-- Main Navigation Menu -->
-      <nav class="hp-main-nav">
-        <div class="nav-links-container">
-          <button class="nav-link active" data-view-target="hub">
-            <span>🏛️</span> <span data-i18n="nav.hub">Inicio & Hub</span>
-          </button>
-          <button class="nav-link" data-view-target="artisan">
-            <span>👴</span> <span data-i18n="nav.artisan">Maestro Artesano</span>
-          </button>
-          <button class="nav-link" data-view-target="apprentice">
-            <span>🧑‍🎓</span> <span data-i18n="nav.apprentice">Aprendiz Joven</span>
-          </button>
-          <button class="nav-link" data-view-target="council">
-            <span>⚖️</span> <span data-i18n="nav.council">Consejo de Ancianos</span>
-          </button>
-          <button class="nav-link" data-view-target="market">
-            <span>🛍️</span> <span data-i18n="nav.market">Mercado Ético & QR</span>
-          </button>
-          <button class="nav-link" data-view-target="materials">
-            <span>🌿</span> <span data-i18n="nav.materials">Materias Primas</span>
-          </button>
-          <button class="nav-link" data-view-target="impact">
-            <span>📊</span> <span data-i18n="nav.impact">Impacto & Rally 2026</span>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main Content Body -->
-    <main class="app-main-content">
-
-      <!-- =========================================================================
-           VIEW 1: INICIO & HUB GENERAL (view-hub)
-           ========================================================================= -->
-      <section id="view-hub" class="view-panel active">
-        
-        <!-- Hero Section -->
-        <div class="hero-banner">
-          <div class="hero-tagline-badge">
-            <span>🇳🇮</span> INATEC &bull; CNEC &bull; CNU &bull; MIFIC &bull; MINJUVE &bull; SECN
-          </div>
-          <h2 class="hero-title" data-i18n="hubTitle">
-            Rescate, Formación y Trazabilidad de Saberes Tradicionales
-          </h2>
-          <p class="hero-subtitle" data-i18n="hubSubtitle">
-            Ecosistema tecnológico-comunitario de arquitectura <strong>100% Offline-First</strong>, diseñado para salvaguardar la memoria ancestral, capacitar a jóvenes rurales y garantizar comercio justo con retención del <strong>90% del valor</strong> en las comunidades de Nicaragua.
-          </p>
-          <div class="hero-cta-group">
-            <button class="btn btn-primary btn-lg" onclick="window.hpApp.navigate('market')">
-              <span>🛍️</span> Explorar Mercado Ético & Pasaportes QR
-            </button>
-            <button class="btn btn-secondary btn-lg" onclick="window.hpApp.navigate('artisan')">
-              <span>👴</span> Portal del Maestro
-            </button>
-            <button class="btn btn-outline btn-lg" onclick="window.hpAudio.speak('Herencia Pinolera es un ecosistema tecnológico-comunitario offline-first para salvaguardar saberes tradicionales, capacitar a jóvenes y asegurar comercio justo mediante trazabilidad digital.')">
-              <span>🔊</span> Escuchar Resumen
-            </button>
-          </div>
-        </div>
-
-        <!-- 6 Real-time Key Metric Counters -->
-        <div class="stats-counter-grid">
-          <div class="stat-counter-card">
-            <span class="stat-icon">🏺</span>
-            <div id="stat-saberes" class="stat-value">48</div>
-            <div class="stat-label" data-i18n="statsSaberes">Saberes Digitalizados</div>
-          </div>
-          <div class="stat-counter-card">
-            <span class="stat-icon">👴</span>
-            <div id="stat-maestros" class="stat-value">32</div>
-            <div class="stat-label" data-i18n="statsMaestros">Maestros Sabios</div>
-          </div>
-          <div class="stat-counter-card">
-            <span class="stat-icon">🧑‍🎓</span>
-            <div id="stat-aprendices" class="stat-value">145</div>
-            <div class="stat-label" data-i18n="statsAprendices">Jóvenes Aprendices</div>
-          </div>
-          <div class="stat-counter-card">
-            <span class="stat-icon">📱</span>
-            <div id="stat-piezas-qr" class="stat-value">680</div>
-            <div class="stat-label" data-i18n="statsTrazabilidad">Piezas con Pasaporte QR</div>
-          </div>
-          <div class="stat-counter-card">
-            <span class="stat-icon">🏛️</span>
-            <div id="stat-fondo" class="stat-value">C$ 42,850</div>
-            <div class="stat-label" data-i18n="statsFondo">Fondo Comunal</div>
-          </div>
-          <div class="stat-counter-card">
-            <span class="stat-icon">💰</span>
-            <div id="stat-retencion" class="stat-value">90%</div>
-            <div class="stat-label" data-i18n="statsRetencion">Retención en Comunidad</div>
-          </div>
-        </div>
-
-        <!-- 5 Structural Breakdowns (Quiebres Estructurales vs Solución) -->
-        <div class="section-header-block">
-          <h2><span>⚖️</span> Los 5 Quiebres Estructurales y Nuestra Solución</h2>
-          <p>Superando las barreras históricas del sector artesanal en el Pacífico y Costa Caribe de Nicaragua.</p>
-        </div>
-
-        <div class="cards-grid-3 mb-4">
-          <div class="artisan-card">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">🗣️</span>
-              <div>
-                <h4>1. Memoria Oral sin Respaldo</h4>
-                <span class="badge-tag-eco">Solución: Microcápsulas PWA</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Documentación paso a paso de técnicas en audio y video sin exigir habilidades complejas de lectoescritura.</p>
-          </div>
-
-          <div class="artisan-card">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">🚫</span>
-              <div>
-                <h4>2. Coyotaje e Intermediación (80%)</h4>
-                <span class="badge-tag-eco">Solución: Retención del 90%</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Trazabilidad con Pasaporte QR que transfiere 75% al joven creador, 15% al maestro y 5% al fondo rotatorio de insumos.</p>
-          </div>
-
-          <div class="artisan-card">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">⏳</span>
-              <div>
-                <h4>3. Rigidez de Modelos Tradicionales</h4>
-                <span class="badge-tag-eco">Solución: Pedagogía Híbrida</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Aprendizaje modular asíncrono a propio ritmo complementado con talleres prácticos intensivos de 1 a 2 horas.</p>
-          </div>
-
-          <div class="artisan-card">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">📶</span>
-              <div>
-                <h4>4. Brecha Digital y Lingüística</h4>
-                <span class="badge-tag-eco">Solución: Offline + 4 Lenguas</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Operación 100% desconectada con micro-servidores Raspberry Pi 5 y locuciones en Miskitu, Mayangna, Kriol y Español.</p>
-          </div>
-
-          <div class="artisan-card">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">🛡️</span>
-              <div>
-                <h4>5. Apropiación Indebida de Saberes</h4>
-                <span class="badge-tag-eco">Solución: Bóveda Sagrada</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Gobernanza con Consejos de Ancianos y Gobiernos Territoriales Indígenas para resguardar conocimientos sagrados bajo custodia comunitaria.</p>
-          </div>
-
-          <div class="artisan-card" style="border-color: var(--color-gold); background: rgba(217, 119, 6, 0.08);">
-            <div class="artisan-card-header">
-              <span style="font-size: 2rem;">✨</span>
-              <div>
-                <h4>Relevo Generacional Activo</h4>
-                <span class="badge-tag-eco">+30,000 Familias Impactadas</span>
-              </div>
-            </div>
-            <p class="artisan-bio">Incentivos económicos dignos y reconocimiento digital para que los jóvenes no migren y continúen con el arte de sus abuelos.</p>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 2: PORTAL MAESTRO ARTESANO (view-artisan)
-           ========================================================================= -->
-      <section id="view-artisan" class="view-panel">
-        
-        <div class="section-header-block">
-          <h2 data-i18n="artisanTitle"><span>👴</span> Portal del Maestro Artesano & Portador del Saber</h2>
-          <p data-i18n="artisanSubtitle">Graba técnicas paso a paso, gestiona talleres y valida a tus aprendices con asistencia de voz.</p>
-        </div>
-
-        <!-- Step-by-step Flow Ribbon (A1 - A8) -->
-        <div class="flow-wizard-nav">
-          <div class="flow-step-pill active" data-i18n="stepA1">1. Registro Asistido</div>
-          <div class="flow-step-pill" data-i18n="stepA2">2. Idioma Nativo</div>
-          <div class="flow-step-pill" data-i18n="stepA3">3. Grabar Técnica</div>
-          <div class="flow-step-pill" data-i18n="stepA4">4. Horarios Talleres</div>
-          <div class="flow-step-pill" data-i18n="stepA5">5. Alertas Sonoras</div>
-          <div class="flow-step-pill" data-i18n="stepA6">6. Taller Práctico</div>
-          <div class="flow-step-pill" data-i18n="stepA7">7. Certificar Aprendiz</div>
-          <div class="flow-step-pill" data-i18n="stepA8">8. Billetera y Honorarios</div>
-        </div>
-
-        <!-- Select Master Profile -->
-        <h3 class="mb-2" style="color: #FDE68A;">1. Maestros Portadores del Saber Registrados:</h3>
-        <div id="artisans-selection-grid" class="cards-grid-4 mb-4"></div>
-
-        <!-- A3: Audio/Video Recording Studio Simulator -->
-        <div class="audio-recorder-studio">
-          <h3>🎙️ Estudio de Grabación de Microcápsulas Asistido (A3)</h3>
-          <p class="text-muted">Presiona el botón rojo para registrar tu voz y técnica paso a paso. Se guardará en la cola offline de la PWA.</p>
-
-          <div class="recorder-screen">
-            <canvas id="capsule-visualizer-canvas" class="visualizer-canvas" width="480" height="90"></canvas>
-            <div id="capsule-record-timer" class="recorder-timer">00:00 (Listo para grabar)</div>
-          </div>
-
-          <div class="recorder-controls-row">
-            <button id="btn-start-record" class="btn btn-danger btn-lg" onclick="window.hpApp.startRecordingCapsule()">
-              🔴 Iniciar Grabación de Saber
-            </button>
-            <button id="btn-stop-record" class="btn btn-success btn-lg" disabled onclick="window.hpApp.stopRecordingCapsule()">
-              ⏹️ Detener & Enviar a Curaduría
-            </button>
-            <button class="btn btn-outline" onclick="window.hpAudio.speak('Grabando técnica ancestral. Describe el material, el amasado o tejido y las recomendaciones sagradas.')">
-              🔊 Instrucciones por Voz
-            </button>
-          </div>
-        </div>
-
-        <!-- A4 & A5: Schedule Workshops and Auditory Alerts -->
-        <div class="cards-grid-duo mb-4">
-          
-          <!-- Workshop Scheduler -->
-          <div class="chart-card-box" style="align-items: stretch;">
-            <h3>📅 Programar Taller Práctico Intensivo (A4)</h3>
-            <p>Define horarios flexibles de 1 a 2 horas en casas comunales.</p>
-            <form onsubmit="window.hpApp.scheduleArtisanWorkshop(event)">
-              <div style="margin-bottom: 12px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Oficio / Técnica a Impartir:</label>
-                <input type="text" value="Alfarería Precolombina y Bruñido con Ágata" style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-              </div>
-              <div style="margin-bottom: 12px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Día y Horario Comunal:</label>
-                <input type="text" value="Sábados 2:00 PM - 4:00 PM" style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-              </div>
-              <div style="margin-bottom: 16px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Lugar Comunal:</label>
-                <input type="text" value="Taller Comunitario Los Laureles, San Juan de Oriente" style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                📅 Publicar Horario de Taller
-              </button>
-            </form>
-          </div>
-
-          <!-- Auditory Alert Simulator & Student Validation -->
-          <div class="chart-card-box" style="align-items: stretch;">
-            <h3>🔔 Alertas Auditivas y Firma de Aval (A5 - A7)</h3>
-            <p>Notificaciones sonoras en lengua nativa cuando un joven se inscribe o culmina una pieza.</p>
-            
-            <div style="background: #0F172A; padding: 14px; border-radius: var(--radius-sm); margin-bottom: 16px;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <strong>🧑‍🎓 Joven Asignado: Bryan Centeno</strong>
-                <span class="badge-tag-eco">Pieza Lista para Aval</span>
-              </div>
-              <p style="font-size: 0.82rem; color: var(--text-muted);">Pieza: Vasija Ceremonial Jaguar (Técnica de Bruñido 100% dominada).</p>
-            </div>
-
-            <div style="display: flex; gap: 10px; flex-direction: column;">
-              <button class="btn btn-secondary btn-block" onclick="window.hpApp.testMasterAuditoryAlert()">
-                🔊 Probar Alerta Auditiva de Aprendiz (A5)
-              </button>
-              <button class="btn btn-success btn-block" onclick="window.hpApp.certifyStudentPiece()">
-                📜 Firmar Aval Comunitario & Emitir QR (A7)
-              </button>
-            </div>
-
-            <div class="mt-3" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
-              <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                <span>💰 Honorarios Acumulados (A8):</span>
-                <strong style="color: #FBBF24;">C$ 4,800.00 NIO</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                <span>✨ Regalías por Piezas Vendidas (15%):</span>
-                <strong style="color: #34D399;">C$ 1,327.50 NIO</strong>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 3: PORTAL APRENDIZ JOVEN (view-apprentice)
-           ========================================================================= -->
-      <section id="view-apprentice" class="view-panel">
-        
-        <div class="section-header-block">
-          <h2 data-i18n="apprenticeTitle"><span>🧑‍🎓</span> Ruta de Formación y Emprendimiento Juvenil</h2>
-          <p data-i18n="apprenticeSubtitle">Aprende un oficio ancestral a tu propio ritmo, solicita insumos y vende con pasaporte digital.</p>
-        </div>
-
-        <!-- Step-by-step Flow Ribbon (B1 - B8) -->
-        <div class="flow-wizard-nav">
-          <div class="flow-step-pill active" data-i18n="stepB1">1. Elegir Oficio</div>
-          <div class="flow-step-pill" data-i18n="stepB2">2. Descargar Offline</div>
-          <div class="flow-step-pill" data-i18n="stepB3">3. Solicitar Insumos</div>
-          <div class="flow-step-pill" data-i18n="stepB4">4. Estudio Asíncrono</div>
-          <div class="flow-step-pill" data-i18n="stepB5">5. Reservar Taller</div>
-          <div class="flow-step-pill" data-i18n="stepB6">6. Producir Pieza</div>
-          <div class="flow-step-pill" data-i18n="stepB7">7. Pasaporte QR</div>
-          <div class="flow-step-pill" data-i18n="stepB8">8. Venta Directa</div>
-        </div>
-
-        <!-- B1 & B2: Courses & Offline Micro-Routes Carousel -->
-        <h3 class="mb-2" style="color: #FDE68A;">Catálogo de Oficios Ancestrales & Micro-Rutas Formativas:</h3>
-        <div id="courses-carousel-container" class="cards-grid-4 mb-4"></div>
-
-        <!-- B4: Active Lesson Interactive Offline Player -->
-        <div id="active-lesson-viewer" class="mb-4"></div>
-
-        <!-- B3 & B7: Request Material Kit & Generate QR Passport -->
-        <div class="cards-grid-duo mb-4">
-          
-          <div class="chart-card-box" style="align-items: stretch;">
-            <h3>📦 Solicitar Kit de Insumos Básicos / Beca Comunal (B3)</h3>
-            <p>Financiado automáticamente por el 5% del Fondo Rotatorio de Ventas.</p>
-            <form onsubmit="window.hpApp.requestCommunalKit(event)">
-              <div style="margin-bottom: 12px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Nombre del Aprendiz:</label>
-                <input type="text" value="Bryan Centeno (19 años)" style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-              </div>
-              <div style="margin-bottom: 12px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Comunidad / Territorio:</label>
-                <input type="text" value="San Juan de Oriente, Masaya" style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-              </div>
-              <div style="margin-bottom: 16px;">
-                <label style="font-size: 0.8rem; color: var(--text-muted);">Kit Requerido:</label>
-                <select style="width: 100%; padding: 10px; background: #0B0F17; border: 1px solid var(--bg-card-border); color: #fff; border-radius: var(--radius-sm);">
-                  <option>Kit #1: Arcillas Volcánicas, Torno Portátil y Juego de Bruñido</option>
-                  <option>Kit #2: Mazo de Guayacán, Corteza de Tuno y Tintes Naturales</option>
-                  <option>Kit #3: Bastidor de Cedro, Hilo de Henequén y Tintura de Sacuanjoche</option>
-                  <option>Kit #4: Frascos de Resina de Copal, Aceite de Coco y Bambú Marino</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                📦 Solicitar Kit Gratuito (Fondo Comunal)
-              </button>
-            </form>
-          </div>
-
-          <div class="chart-card-box" style="align-items: stretch;">
-            <h3>🏅 Insignia Digital & Pasaporte QR de Origen (B7 - B8)</h3>
-            <p>Al concluir tu pieza con el maestro, obtienes tu certificado inalterable.</p>
-            
-            <div style="text-align: center; background: #0F172A; padding: 20px; border-radius: var(--radius-sm); border: 1px dashed var(--color-gold);">
-              <div style="font-size: 2.5rem; margin-bottom: 8px;">🎖️</div>
-              <h4 style="color: #FDE68A;">Insignia: Maestro del Bruñido Volcánico 2026</h4>
-              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">Emitida por INATEC & Consejo de Sabios de Masaya</p>
-              <button class="btn btn-success btn-block" onclick="window.hpQRPassport.openPassportModal(HP_DATA.products[0])">
-                📱 Ver Mi Pasaporte Digital QR Generado
-              </button>
-            </div>
-
-            <div class="mt-3" style="font-size: 0.82rem; color: var(--text-muted);">
-              <span>💡 Al vender en el Mercado Ético, recibirás el <strong>75% del valor directo</strong> en tu cuenta/punto local sin intermediarios.</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 4: CURADURÍA & CONSEJO DE ANCIANOS (view-council)
-           ========================================================================= -->
-      <section id="view-council" class="view-panel">
-        
-        <div class="section-header-block">
-          <h2 data-i18n="councilTitle"><span>⚖️</span> Panel de Curaduría y Consejo de Ancianos</h2>
-          <p data-i18n="councilSubtitle">Soberanía Cultural y Auditoría Comunitaria de Saberes Ancestrales.</p>
-        </div>
-
-        <!-- Step-by-step Flow Ribbon (C1 - C6) -->
-        <div class="flow-wizard-nav">
-          <div class="flow-step-pill active">C1. Acceso Restringido</div>
-          <div class="flow-step-pill">C2. Revisión de Saberes</div>
-          <div class="flow-step-pill">C3. Criterio: ¿Sagrado o Abierto?</div>
-          <div class="flow-step-pill">C4. Bloqueo en Bóveda</div>
-          <div class="flow-step-pill">C5. Aval Digital</div>
-          <div class="flow-step-pill">C6. Fondo Comunal (5%)</div>
-        </div>
-
-        <!-- Communal Rotating Fund Highlight Banner -->
-        <div class="communal-fund-banner">
-          <div>
-            <span class="badge-tag-eco mb-2">🏛️ Gobernanza Económica Autónoma</span>
-            <h3>Fondo Rotatorio Comunitario (5% de Ventas)</h3>
-            <p class="text-muted" style="max-width: 600px;">
-              Cada venta de artesanías retribuye automáticamente con un 5% al fondo común para financiar kits de herramientas y becas a nuevos jóvenes aprendices.
-            </p>
-          </div>
-          <div style="text-align: right;">
-            <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Saldo Comunal Disponible:</span>
-            <div id="council-fund-balance" class="fund-balance-display">C$ 42,850.00</div>
-            <button class="btn btn-sm btn-outline mt-2" onclick="alert('Historial del Fondo:\n- 12 Kits entregados a aprendices de San Juan de Oriente (C$ 14,400)\n- 6 Micro-becas de transporte en Bonanza (C$ 7,200)\n- Aportes recibidos por ventas de agosto: C$ 64,450')">
-              📜 Ver Libro Mayor Comunitario
-            </button>
-          </div>
-        </div>
-
-        <!-- Cultural Sovereignty Governance Records Grid -->
-        <h3 class="mb-3" style="color: #FDE68A;">Bandeja de Dictamen de Saberes: ¿Sagrado o Abierto?</h3>
-        <div id="governance-records-grid" class="gov-records-grid"></div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 5: MERCADO ÉTICO & PASAPORTE QR (view-market)
-           ========================================================================= -->
-      <section id="view-market" class="view-panel">
-        
-        <div class="section-header-block">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
-            <div>
-              <h2 data-i18n="marketTitle"><span>🛍️</span> Mercado Ético, Turismo Cultural & Pasaporte QR</h2>
-              <p data-i18n="marketSubtitle">Cada pieza narra la historia del maestro, el aprendiz y su origen sostenible.</p>
-            </div>
-            <button class="btn btn-primary btn-lg" onclick="window.hpQRPassport.openScannerModal()">
-              <span>📷</span> Escanear Pasaporte QR
-            </button>
-          </div>
-        </div>
-
-        <!-- Products Grid -->
-        <div id="products-market-grid" class="cards-grid-4 mb-4"></div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 6: DIRECTORIO DE MATERIAS PRIMAS (view-materials)
-           ========================================================================= -->
-      <section id="view-materials" class="view-panel">
-        
-        <div class="section-header-block">
-          <h2 data-i18n="materialsTitle"><span>🌿</span> Directorio de Materias Primas Sostenibles</h2>
-          <p data-i18n="materialsSubtitle">Red local de extractores comunitarios y banco de materiales 100% ecológicos.</p>
-        </div>
-
-        <div id="materials-directory-grid" class="materials-directory-grid mb-4"></div>
-
-      </section>
-
-      <!-- =========================================================================
-           VIEW 7: IMPACTO, NEGOCIO (CANVAS) & RALLY 2026 (view-impact)
-           ========================================================================= -->
-      <section id="view-impact" class="view-panel">
-        
-        <div class="section-header-block">
-          <h2 data-i18n="impactTitle"><span>📊</span> Evaluación de Impacto Multidimensional & Modelo Canvas</h2>
-          <p data-i18n="impactSubtitle">Propuesta ganadora presentada en el IV Rally Nacional de Innovación "Nicaragua Innova 2026".</p>
-        </div>
-
-        <!-- Charts Grid (Radar Chart & Value Distribution Chart) -->
-        <div class="charts-grid-duo">
-          
-          <!-- Radar Chart Box -->
-          <div class="chart-card-box">
-            <h3>Evaluación de Impacto Multidimensional</h3>
-            <p>Herencia Pinolera vs. Modelo Tradicional (Página 9 del PDF)</p>
-            <div class="chart-canvas-wrapper">
-              <canvas id="radarCanvas" width="480" height="380"></canvas>
-            </div>
-            <div class="radar-legend">
-              <div class="legend-item">
-                <span class="legend-color-dot dot-traditional"></span>
-                <span>Línea Base (Modelo Tradicional)</span>
-              </div>
-              <div class="legend-item">
-                <span class="legend-color-dot dot-herencia"></span>
-                <span>Impacto Proyectado (Herencia Pinolera)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Value Distribution & Trend Charts -->
-          <div class="chart-card-box">
-            <h3>Distribución del Valor de Venta & Relevo Generacional</h3>
-            <p>Retención Directa (Página 3 del PDF)</p>
-            <div class="chart-canvas-wrapper bar-height">
-              <canvas id="distroCanvas" width="440" height="260"></canvas>
-            </div>
-            <div class="chart-canvas-wrapper bar-height mt-3">
-              <canvas id="apprenticeTrendCanvas" width="440" height="260"></canvas>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- 9-Boxes Interactive CANVAS Model -->
-        <div class="section-header-block mt-4">
-          <h3><span>📋</span> Lienzo de Modelo de Negocios CANVAS (Página 7 del PDF)</h3>
-          <p>Ecosistema Tecnológico-Comunitario Offline-First | Innovación Social</p>
-        </div>
-
-        <div class="canvas-grid-container">
-          <div class="canvas-box canvas-socios">
-            <h4><span>🤝</span> Socios Clave</h4>
-            <ul id="canvas-socios"></ul>
-          </div>
-          <div class="canvas-box canvas-actividades">
-            <h4><span>⚡</span> Actividades Clave</h4>
-            <ul id="canvas-actividades"></ul>
-          </div>
-          <div class="canvas-box canvas-recursos">
-            <h4><span>📦</span> Recursos Clave</h4>
-            <ul id="canvas-recursos"></ul>
-          </div>
-          <div class="canvas-box canvas-propuesta">
-            <h4><span>💎</span> Propuesta de Valor</h4>
-            <ul id="canvas-propuesta"></ul>
-          </div>
-          <div class="canvas-box canvas-relaciones">
-            <h4><span>❤️</span> Relaciones con Clientes</h4>
-            <ul id="canvas-relaciones"></ul>
-          </div>
-          <div class="canvas-box canvas-canales">
-            <h4><span>🌐</span> Canales</h4>
-            <ul id="canvas-canales"></ul>
-          </div>
-          <div class="canvas-box canvas-segmento">
-            <h4><span>👥</span> Segmento de Clientes</h4>
-            <ul id="canvas-segmento"></ul>
-          </div>
-          <div class="canvas-box canvas-costos">
-            <h4><span>💸</span> Estructura de Costos (C$ 206,000)</h4>
-            <ul id="canvas-costos"></ul>
-          </div>
-          <div class="canvas-box canvas-ingresos">
-            <h4><span>💰</span> Fuentes de Ingresos</h4>
-            <ul id="canvas-ingresos"></ul>
-          </div>
-        </div>
-
-        <!-- Detailed Budget Table (C$ 206,000) -->
-        <div class="section-header-block mt-4">
-          <h3><span>💵</span> Presupuesto Detallado de Inversión (Páginas 5 y 6 del PDF)</h3>
-          <p>Monto Total del Proyecto: <strong>C$ 206,000.00 Córdobas</strong></p>
-        </div>
-
-        <div class="budget-table-wrapper">
-          <table class="budget-table">
-            <thead>
-              <tr>
-                <th class="text-center">#</th>
-                <th>Descripción del Rubro</th>
-                <th class="text-center">Unidad</th>
-                <th class="text-center">Cant.</th>
-                <th class="text-right">Precio Unitario</th>
-                <th class="text-right">Total (C$)</th>
-              </tr>
-            </thead>
-            <tbody id="budget-table-body"></tbody>
-            <tfoot>
-              <tr>
-                <td colspan="5" class="text-right font-bold">TOTAL GENERAL DEL PROYECTO:</td>
-                <td id="budget-total-val" class="text-right font-bold text-terracotta">C$ 206,000.00</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-
-        <!-- 12-Month Implementation Roadmap -->
-        <div class="section-header-block mt-4">
-          <h3><span>🗺️</span> Plan de Implementación y Ruta de Ejecución (12 Meses)</h3>
-          <p>Diagnóstico (M1-3), Desarrollo PWA (M4-6), Piloto (M7-9) y Escalamiento (M10-12).</p>
-        </div>
-
-        <div id="roadmap-timeline-container" class="roadmap-timeline-grid"></div>
-
-        <!-- Team & Rally Credentials -->
-        <div class="section-header-block mt-4">
-          <h3><span>🏆</span> Equipo de Innovación & Mentoría</h3>
-          <p>Centro Tecnológico Ricardo Morales Avilés &bull; Rally Nacional Nicaragua Innova 2026</p>
-        </div>
-
-        <div class="team-grid-rally">
-          <div class="team-member-card">
-            <span class="member-icon">👨‍🏫</span>
-            <h5>Nelson Uriel Anton Conrado</h5>
-            <span>Tutor & Mentor</span>
-          </div>
-          <div class="team-member-card">
-            <span class="member-icon">💻</span>
-            <h5>Jose Giovanny Ampiè Perez</h5>
-            <span>T.E. Programación - Marketing</span>
-          </div>
-          <div class="team-member-card">
-            <span class="member-icon">📊</span>
-            <h5>Josseling Tatiana Vargas Jarquin</h5>
-            <span>T.E. Programación - Marketing</span>
-          </div>
-          <div class="team-member-card">
-            <span class="member-icon">🎙️</span>
-            <h5>Eliab Nathanael Blas Ochoa</h5>
-            <span>T.E. Programación - Comunicador</span>
-          </div>
-          <div class="team-member-card">
-            <span class="member-icon">🎨</span>
-            <h5>Madisson Elith Ureña Mojica</h5>
-            <span>T.E. Programación - Diseño Gráfico</span>
-          </div>
-        </div>
-
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer style="background: #0F172A; border-top: 1px solid var(--bg-card-border); padding: 24px; text-align: center; font-size: 0.82rem; color: var(--text-muted);">
-      <p><strong>Herencia Pinolera &bull; Nicaragua Innova 2026</strong></p>
-      <p>Comisión Nacional de Economía Creativa | CNU | INATEC | MIFIC | MINJUVE | SECN</p>
-      <p style="margin-top: 6px;">Centro Tecnológico Ricardo Morales Avilés &bull; Desarrollado con tecnología Offline-First PWA</p>
-    </footer>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/translations.js"></script>
-  <script src="js/audio-engine.js"></script>
-  <script src="js/qr-passport.js"></script>
-  <script src="js/charts.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
